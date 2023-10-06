@@ -1,0 +1,477 @@
+/****************** starup ****************/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    transition: all ease-in-out .3s;
+}
+:root{
+    --headingT: 'Fredoka', sans-serif;
+    --paraT: 'Lato', sans-serif;
+    --cta: #819600;
+    --cta2: #1476bc;
+}
+/***************** basic *****************/
+body{
+    scroll-behavior: smooth;
+    height: 200vh;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body li{
+    list-style: none;
+}
+body h1{
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 45px;
+    font-family: var(--headingT);
+}
+body h3{
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-family: var(--headingT);
+}
+body a{
+    text-decoration: none;
+    font-family: var(--paraT);
+    color: black;
+}
+body p{
+    letter-spacing: .5px;
+    font-family: var(--paraT);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    padding: 100px 80px;
+}
+.section-header{
+    margin-bottom: 50px;
+}
+.section-header p{
+    margin-top: 20px;
+}
+/* header */
+/* promobar */
+.promobar{
+    background-color: var(--cta2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    color: #fff;
+}
+.promoleft{
+    display: flex;
+    gap: .1rem;
+    align-items: center;
+}
+.promobar p{
+    padding: 10px 20px;
+}
+.promobar a{
+    color: black;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+.promobar i{
+    font-size: 14px;
+    padding-right: 5px;
+}
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #fff;
+}
+nav .logo{
+    width: 250px;
+}
+nav a{
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+/* hero */
+.hero{
+    padding: 200px 100px 40px 100px;
+    text-align: center;
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.295)), url(img/hero.png);
+    background-size: cover;
+    background-position: center;
+}
+.hero h3{
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.hero h1{
+    font-size: 70px;
+    color: #fff;
+    font-weight: 500;
+}
+.hero p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.hero a{
+    background-color: var(--cta);
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    font-weight: bold;
+    color: #fff;
+}
+/* service */
+.subService{
+    margin-top: -120px !important;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+.subServiceContent{
+    height: 220px;
+    padding: 20px;
+    background-color: blue;
+    position: relative;
+}
+.subServiceContent1{
+    background: linear-gradient(#768800, #a8c200);
+}
+.subServiceContent2{
+    background: linear-gradient(#768800, #a8c200);
+}
+.subServiceContent3{
+    background: linear-gradient(#768800, #a8c200);
+}
+.subService h4{
+    font-family: var(--headingT);
+    font-weight: 400 !important;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+}
+.subService p{
+    color: #fff;
+    padding: 20px;
+}
+.subService i{
+    color: #fff;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: -15px;
+    color: var(--cta);
+    background-color: #fff;
+}
+/* loan */
+.loanheader{
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.loancontent{
+    display: grid;
+    grid-template-columns: 42% 42%;
+    justify-content: center;
+    gap: 2rem;
+}
+.loanSubData{
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    gap: 2rem;
+}
+.loanSubData h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 90px;
+    background-color: var(--cta2);
+    color: #fff;
+    border-radius: 50%;
+}
+.loanSubData h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: var(--cta2);
+}
+.loan img{
+    height: 330px;
+}
+/* diffrent */
+.diff{
+    display: grid;
+    grid-template-columns: 42% 42%;
+    justify-content: center;
+    gap: 4rem;
+    padding: 100px;
+    background-color: var(--cta);
+    background-image:  url(img/bc.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.diff h1{
+    font-size: 43px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.diff p{
+    margin-bottom: 20px;
+}
+.diff a{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    background-color: #fff;
+    font-weight: bold;
+}
+.faq{
+    background: linear-gradient(to bottom, #f3f3f3, #fff);
+}
+.faq h1{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.faq h3{
+    color: var(--cta2);
+    margin-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+.faq p{
+    margin-bottom: 20px;
+}
+/* most c */
+.mostC{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.mostCData{
+    padding: 30px;
+    position: relative;
+}
+.mostChead{
+    font-size: 30px !important;
+}
+.mostC h1{
+    font-size: 65px;
+    margin-bottom: 30px;
+    color: var(--headingColor);
+}
+.mostC h3{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: var(--headingColor);
+}
+.mostC i{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 45px;
+    padding: 10px;
+    color:  black;
+
+}
+.mostCData{
+    background-color: #1476bc56;
+}
+.mostCData2{
+    background-color: #1476bc86;
+}
+.mostCData3{
+    background-color: #1476bcc2;
+}
+.mostCData4{
+    background-color: #1476bc;
+    color: #fff !important;
+}
+
+.mostCData4 i{
+    color:  #fff;
+}
+/* testmonial */
+.testmonial{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    background: linear-gradient(to bottom,#f3f3f3, #fff);
+    justify-content: center;
+    gap: 2.5rem;
+    z-index: -2;
+}
+.testmonial h3{
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 15px;
+    position: relative;
+    letter-spacing: normal;
+    z-index: 2;
+    font-family: var(--para);
+}
+.testmonial h3::before{
+    background-color: var(--cta);
+    content: "";
+    z-index: -1;
+    height: 100%;
+    width: 25px;
+    position: absolute;
+}
+.testmonial h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.testmonial h1::before{
+    content: "TESTIMONIAL";
+    color: rgba(128, 128, 128, 0.123);
+    font-size: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    margin-top: -80px;
+    position: absolute;
+}
+.testmonial-icons{
+    padding: 20px 0;
+    gap: 1rem;
+    display: flex;
+}
+.testmonial-icons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    color: var(--cta);
+    border: 2px solid var(--cta);
+    border-radius: 50%;
+}
+.testmonial-icons .fa-arrow-right{
+    background-color: var(--cta);
+    color: #fff !important;
+}
+.testmonial-content-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+}
+.testmonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.testmonial h2{
+    font-size: 25px;
+    letter-spacing: normal;
+    font-family: var(--headingT);
+    font-weight: 500;
+}
+.testmonial h4{
+    color: var(--paraT);
+    margin-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: normal;
+    font-family: var(--para);
+    font-weight: bold;
+}
+.testmonial p{
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+/* footer */
+footer{
+  background: rgb(0, 16, 31);
+  color: #fff;
+}
+.footer-data{
+  display: grid;
+  grid-template-columns: 30% 20% 20% 20%;
+  justify-content: center;
+  padding: 50px 80px 20px 80px;
+  gap: 4rem;
+}
+.footer-content{
+  padding: 20px;
+}
+footer .logo{
+    width: 250px !important;
+    margin-bottom: 20px;
+}
+.footerNav{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footer-data h4{
+  font-size: 25px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.footer-data h4 span{
+  font-size: 15px;
+}
+.footer-data img{
+  width: 80px;
+}
+.footer-icons{
+  margin-top: 20px;
+  display: flex;
+  gap: .5rem;
+
+}
+.footer-icons i{
+  font-size: 30px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+}
+.footer-data h3{
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.footer-data a{
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+}
+.copyright-txt{
+  font-size: 15px;
+  padding: 10px 150px;
+}
